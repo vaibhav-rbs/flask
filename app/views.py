@@ -4,15 +4,15 @@ from app import app
 @app.route('/')
 @app.route('/index')
 def index():
-    user = { 'nickname': 'Miguel' } # fake user
+    user = { 'nickname': 'Vaibhav' } # fake user
     posts = [ # fake array of posts
         { 
-            'author': { 'nickname': 'John' }, 
-            'body': 'Beautiful day in Portland!' 
+            'author': { 'nickname': 'Anshu' }, 
+            'body': 'Vaibhav is the best in the world.!' 
         },
         { 
-            'author': { 'nickname': 'Susan' }, 
-            'body': 'The Avengers movie was so cool!' 
+            'author': { 'nickname': 'Courtney' },
+            'body': 'I love you!' 
         }
     ]
     return render_template("index.html",
